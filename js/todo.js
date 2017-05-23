@@ -8,16 +8,13 @@ if (typeof(Storage) !== "undefined") {
   });
   var itemList = document.getElementById("items");
   for (var i = 0; i < localStorage.length && localStorage.key(i).value !== ''; i++) {
-      console.log(localStorage.getItem(i));
       itemList.innerHTML += '<p data-itemId='+i+'>'+localStorage.getItem(i)+'</p>';
   }
   var pTags = document.querySelectorAll("p");
-  console.log(pTags);
   var id;
   for (var i = 0; i < pTags.length; i++) {
     pTags[i].addEventListener('click', function() {
       id = this.getAttribute("data-itemId");
-        console.log(id);
         localStorage.setItem(id, '');
         this.parentNode.removeChild(this);
     });
