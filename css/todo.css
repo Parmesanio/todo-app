@@ -1,0 +1,93 @@
+body {
+  background: rgba(38, 47, 52,1);
+  color: var(--orange);
+  font-family: var(--fontFamily);
+}
+:root {
+  --bRadius: 3px;
+  --fontFamily: 'Permanent Marker';
+  --fontSize: 1.2em;
+  --fullWidth: 100%;
+  --hover: #E56916;
+  --ibHeight: 39.5px;
+  --orange: #ff7518;
+  --spacing: 10px 18px;
+}
+
+@media only screen and (min-width: 0px) {
+section {
+  margin-top: 1em;
+}
+.container {
+  margin: auto;
+  width: 90%;
+}
+input {
+  background: #2F3A40;
+  border: 0.5px solid;
+  border-radius: var(--bRadius);
+  box-sizing: border-box;
+  color: #fff;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  height: 50px;
+  margin-bottom: 5px;
+  padding: 0 0 0 15px;
+  width: var(--fullWidth);
+}
+button {
+  border: 1px solid transparent;
+  border-radius: var(--bRadius);
+  color: #fff;
+  cursor: pointer;
+  font-family: var(--fontFamily);
+  height: var(--ibHeight);
+  width: var(--fullWidth);
+}
+#submit {
+  background: var(--orange);
+  border: 1px solid var(--orange);
+  margin-bottom: 5px;
+}
+#submit:hover {
+  background: var(--hover);
+}
+#clear {
+  background: #2F3A40;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+}
+#clear:hover {
+  background: #2B353B;
+}
+#items {
+	border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding-left: 5px;
+}
+p {
+  cursor: pointer;
+  font-size: var(--fontSize);
+}
+p:hover {
+  color: var(--hover)
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --fullWidth: 70%;
+    --ibHeight: 50px;
+  }
+  input {
+    height: var(--ibHeight);
+    width: var(--fullWidth);
+    vertical-align: top;
+  }
+  button {
+    height: var(--ibHeight);
+    width: 14%;
+  }
+
+}
