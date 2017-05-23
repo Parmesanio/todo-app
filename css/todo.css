@@ -70,7 +70,8 @@ p {
   font-size: var(--fontSize);
 }
 p:hover {
-  color: var(--hover)
+  color: var(--hover);
+  text-decoration: line-through;
 }
 
 }
