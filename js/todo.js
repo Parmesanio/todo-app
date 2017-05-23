@@ -1,4 +1,4 @@
-if (typeof(Storage) !== "undefined" && window.location == "https://parmesanio.github.io/todo-app/") {
+if (typeof(Storage) !== "undefined") {
   document.getElementById("submit").addEventListener('click', function() {
     if (document.getElementById("input").value == '') {
       // Do Nothing
