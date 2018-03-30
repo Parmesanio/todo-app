@@ -1,24 +1,21 @@
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ToDo App</title>
+    <title>To Do</title>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link rel="stylesheet" href="./css/todo.css">
+    <link rel="stylesheet" href="./assets/css/todos.css">
+    <script src="./assets/js/lib/jQuery-3.2.1.min.js" charset="utf-8"></script>
   </head>
   <body>
-    <section>
-      <div class="container">
-        <form>
-          <input id="input" type="text" placeholder="Enter ToDo's Here">
-          <button id="submit" type="submit">Add Item</button>
-          <button id="clear" type="submit">Clear List</button>
-        </form>
-        <h4>* Click or tap ToDo to remove</h4>
-        <div id="items">
 
-        </div>
-      </div>
-    </section>
+    <div id="container">
+      <h1>To-Do List</h1>
+      <input type="text" placeholder="Enter New To-Do">
+      <ul>
+      </ul>
+    </div>
 
-    <script src="./js/todo.js" charset="utf-8"></script>
+    <script src="./assets/js/todos.js" charset="utf-8"></script>
   </body>
+</html>
